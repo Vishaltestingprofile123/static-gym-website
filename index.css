@@ -1,0 +1,182 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #232121;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container to center content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: gold;
+    padding: 10px 0;
+}
+
+header h1 {
+    float: left;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url(https://images.pexels.com/photos/791763/pexels-photo-791763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover;
+    color: yellow;
+    text-align: center;
+    padding:180px 0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: rgb(202, 18, 4);
+    color: #fbf5f5;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  
+}
+
+/* About Section Styles */
+.about {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+p{
+    color: #fbfbfd;
+}
+h1{
+    color: #f7f0f0;
+}
+h2{
+    color: rgb(227, 220, 13);
+}
+/* logo bounce style */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+.logo {
+  color: ghostwhite;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  animation: bounce 2s infinite;
+}
+.banner {
+  position: relative;
+  height: 400px;
+  /* background: url() center/cover; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eaf42d;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 3em;
+}
+.class-card {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgb(20, 20, 19);
+  border-radius: 8px;
+  box-shadow: rgb(82, 80, 80);
+  transition: transform 0.3s;
+}
+/* about section */
+.class-card:hover {
+  transform: scale(1.05);
+  color: #7143d2;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #373636;
+  color: #ebe4e4;
+}
+/* additionl color changes in major sections by hover */
+nav li :hover{
+background-color: rgb(7, 7, 7);
+color: rgb(253, 248, 248);
+border-radius: 3px;
+margin-top: 2px;
+}   
+.about :hover{
+color: #ba3cca;
+}   
+
+/* color chhange in hero h2 section */
+@keyframes colorChange {
+10% {
+color: rgb(211, 53, 5);
+}
+50% {
+color: rgb(245, 247, 244);
+}
+100% {
+color: rgb(217, 124, 240);
+}
+}
+
+.hero h2 {
+animation: colorChange 6s infinite; /* Change color every 2 seconds, repeat infinitely */
+}
+        
